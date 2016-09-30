@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.neumeng.databindingdemo.model.User" />
+    </data>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="firstName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="lastName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.address}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="address" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.phone}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="phone" />
+    </LinearLayout>
+</layout>
